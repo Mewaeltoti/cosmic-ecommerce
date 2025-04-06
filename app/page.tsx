@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Hero } from "@/cosmic/blocks/landing-page/Hero";
 import { Sections } from "@/cosmic/blocks/landing-page/Sections";
 export default function Home() {

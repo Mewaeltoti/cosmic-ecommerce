@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { cosmic } from "@/cosmic/client";
 import { NavMenu } from "@/cosmic/blocks/navigation-menu/NavMenu";
+import Image from "next/image";
 type LinkType = {
   url: string;
   company: string;
@@ -38,7 +39,7 @@ export async function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <Image
                   className="h-[26px]"
                   src={`${link.icon.imgix_url}?w=500&auto=format,compression`}
                   alt={link.company}
