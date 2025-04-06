@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
   const res = await request.json();
   const stripe_product_ids = res.stripe_product_ids;
   try {
-    let line_items = [];
+    const line_items = [];
     let mode = "payment";
     for (const stripe_product_id of stripe_product_ids) {
       const product = await stripe.products.retrieve(stripe_product_id);
