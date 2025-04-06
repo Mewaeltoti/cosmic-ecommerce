@@ -1,6 +1,6 @@
 // app/api/checkout/route.ts
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 import { type NextRequest, NextResponse } from "next/server";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export async function POST(request: NextRequest) {
